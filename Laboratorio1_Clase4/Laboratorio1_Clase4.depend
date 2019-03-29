@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1553821845 source:/home/alumno/Escritorio/Labo1_Aguirre_Joel/Laboratorio1_Clase4/main.c
+	<stdio.h>
+	<stdlib.h>
+	"Utn.h"
+
+1553821778 source:/home/alumno/Escritorio/Labo1_Aguirre_Joel/Laboratorio1_Clase4/Utn.c
+	<stdio.h>
+	<stdlib.h>
+
+1553820847 /home/alumno/Escritorio/Labo1_Aguirre_Joel/Laboratorio1_Clase4/Utn.h
+
