@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1554419486 source:/home/alumno/Entregas/AguirreJoel/Clase_06/Ejercicio clase 6/main.c
+	<stdio.h>
+	<stdlib.h>
+	"Funciones.h"
+
+1554419712 /home/alumno/Entregas/AguirreJoel/Clase_06/Ejercicio clase 6/Funciones.h
+
+1554419427 source:/home/alumno/Entregas/AguirreJoel/Clase_06/Ejercicio clase 6/Funciones.c
+	<stdlib.h>
+	<stdio.h>
+	"funciones.h"
+
