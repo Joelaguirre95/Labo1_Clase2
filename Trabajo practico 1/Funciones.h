@@ -1,10 +1,11 @@
 #ifndef FUNCIONES_H_INCLUDED
 #define FUNCIONES_H_INCLUDED
 
-float sumarNumeros(float* pA, float* pB, float *pResultado);
-float restarNumeros (float* pA, float* pB, float *pResultado);
-float dividirNumeros (float *pA, float *pB, float *pResultado, char* msgError);
-float multiplicarNumeros (float *pA, float *pB, float *pResultado);
+int utn_getNumber(int* pNumero, int maximo, int minimo, char* msg , char* msgError, int reintentos);
+int sumarNumeros(int* pA, int* pB, int* resultado);
+int restarNumeros(int* pA, int* pB, int* resultado);
+float dividirNumeros (int* pA, int* pB, float* resultado, char* msgError);
+int multiplicarNumeros (int* pA, int* pB, int* resultado);
 
 
 #endif // FUNCIONES_H_INCLUDED

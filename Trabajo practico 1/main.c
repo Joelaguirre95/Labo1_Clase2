@@ -4,9 +4,9 @@
 
 int main()
 {
-    float a;
-    float b;
-    float opcion;
+    int a,b,x,y,suma,resta,producto;
+    float division;
+    int opcion;
     do
     {
         printf("\n1. Ingrese un numero: \n");
@@ -14,37 +14,34 @@ int main()
         printf("\n3. Calcular las operaciones");
         printf("\n4. Informar resultados");
         printf("\n5. Salir \n");
+        utn_getNumber(&opcion, 5, 0,"Ingrese una opcion(1-5): ", "Error",5);
 
-        do
-        {
-            printf("\n Indique una opcion(1-5)");
-            scanf("%d", opcion);
+    switch(opcion) {
+      case 1:
+          utn_getNumber(&a, 100, 0,"Ingrese un numero: ", "Error",5);
+      break;
 
-        }while (opcion> 0 || opcion >5);
+      case 2:
+          utn_getNumber(&b, 100, 0,"Ingrese un numero: ", "Error",5);
+      break;
 
-        switch(opcion)
-        {
-            case "1":
-                printf("Ingrese un numero: ");
-                scanf("%f", &a);
-                break;
-            case "2":
-                printf("Ingrese segundo numero: ");
-                scanf("%f", &b);
-                break;
-            case "3":
-                sumarNumeros(&a, &b, resultado);
-                restarNumeros(&a, &b, resultado);
-                dividirNumeros(&a, &b, resultado, "Error. No se puede dividir por 0");
-                multiplicarNumeros(&a, &b, resultado);
-              //  factorialNumeros;
-                break;
-            case "4":
-                printf("\nLa suma de los numeros es: ", resultado);
-                printf("\nLa resta de los numeros es: ", resultado);
-                printf("\nLa division de los numeros es: ", resultado);
-                printf("\nLa multiplicacion de los numeros es: ", resultado);
-        }
-    }while(opcion != 5)
-    return 0;
+      case 3:
+          sumarNumeros(&a, &b, &suma);
+          restarNumeros(&a, &b, &resta);
+          dividirNumeros (&a, &b, &division, "Error. No es posible dividir por 0");
+          multiplicarNumeros (&a, &b, &producto);
+      break;
+
+      case 4:
+      printf("\nLa suma de los numeros es %d", suma);
+      printf("\nLa resta de los numeros es %d", resta);
+      printf("\nLa division de los numeros es %.2f", division);
+      printf("\nLa multiplicacion de los numeros es %d", producto);
+      break;
+
+      case 5:
+      break;
+    }
+    }while(opcion != 5);
+
 }

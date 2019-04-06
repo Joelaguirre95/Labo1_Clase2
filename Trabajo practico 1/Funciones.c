@@ -2,34 +2,52 @@
 #include <stdlib.h>
 #include "Funciones.h"
 
-float sumarNumeros(float* pA, float* pB, float *pResultado)
+int sumarNumeros(int* pA, int* pB, int* resultado) 
 {
-    int resultado;
-    resultado = *pA + *pB;
-    *pResultado = resultado;
+    *resultado = *pA + *pB;
 }
-float restarNumeros (float* pA, float* pB, float *pResultado)
+int restarNumeros(int* pA, int* pB, int* resultado)
 {
-    int resultado;
-    resultado = *pA - *pB;
-    *pResultado = resultado;
+    *resultado = *pA - *pB;
 }
-float dividirNumeros (float *pA, float *pB, float *pResultado, char* msgError)
+float dividirNumeros (int* pA, int* pB, float* resultado, char* msgError)
 {
-    int resultado;
     if(*pB == 0)
     {
-        printf(*msgError);
+        printf("%s", msgError);
     }
     else
     {
-        resultado = *pA / *pB;
-        *pResultado = resultado;
+        *resultado = *pA / *pB;
     }
 }
-float multiplicarNumeros (float *pA, float *pB, float *pResultado)
+int multiplicarNumeros (int* pA, int* pB, int* resultado)
 {
-    int resultado;
-    resultado = *pA * *pB;
-    *pResultado = resultado;
+    *resultado = *pA * *pB;
+}
+
+int utn_getNumber(int* pNumero, int maximo, int minimo, char* msg , char* msgError, int reintentos)
+{
+    int numero;
+    while (reintentos > 0)
+    {
+        printf("%s", msg);    //Pido el numero
+        scanf("%d", &numero);   //Lo guardo en la variable
+        if(numero<= maximo && numero>= minimo) //Validar los datos ingresados
+        {
+            //BIEN. Accedo al casillero de memoria donde quiero guardar el valor de numero.
+            break;
+        }
+        else
+        {
+            printf("%s", msgError);   // MAL. Imprimo el mensaje de error
+        }
+        reintentos --;
+
+    }
+       *pNumero = numero;
+        if (reintentos == 0)
+        {
+            return 0;
+        }
 }
