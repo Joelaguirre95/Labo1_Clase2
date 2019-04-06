@@ -6,6 +6,6 @@ int sumarNumeros(int* pA, int* pB, int* resultado);
 int restarNumeros(int* pA, int* pB, int* resultado);
 float dividirNumeros (int* pA, int* pB, float* resultado, char* msgError);
 int multiplicarNumeros (int* pA, int* pB, int* resultado);
-
+int calcularFactorial(int* pA, int* resultado);
 
 #endif // FUNCIONES_H_INCLUDED
