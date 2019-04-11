@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1554942345 source:/home/alumno/Escritorio/Labo1_Aguirre_Joel/Clase_07/Clase_07/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Utn_Funciones.h"
+
+1554941807 /home/alumno/Escritorio/Labo1_Aguirre_Joel/Clase_07/Clase_07/Utn_Funciones.h
+
+1554942345 source:/home/alumno/Escritorio/Labo1_Aguirre_Joel/Clase_07/Clase_07/Utn_Funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
