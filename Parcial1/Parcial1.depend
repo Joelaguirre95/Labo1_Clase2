@@ -1,0 +1,30 @@
+# depslib dependency file v1.0
+1556154124 source:/home/alumno/Entregas/Parcial1/main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+	"Pantalla.h"
+	"Publicidad.h"
+	<string.h>
+
+1556148527 /home/alumno/Entregas/Parcial1/funciones.h
+
+1556153691 /home/alumno/Entregas/Parcial1/Pantalla.h
+
+1556148527 /home/alumno/Entregas/Parcial1/Publicidad.h
+
+1556148527 source:/home/alumno/Entregas/Parcial1/funciones.c
+	<stdio_ext.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	"funciones.h"
+
+1556154548 source:/home/alumno/Entregas/Parcial1/Pantalla.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+	"Pantalla.h"
+	"Publicidad.h"
+	<string.h>
+
